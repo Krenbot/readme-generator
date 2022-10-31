@@ -17,6 +17,15 @@ function generateMarkdown(data) {
 ![badge](https://img.shields.io/github/last-commit/${data.ghuser}/${data.ghrepo})
 TODO: Add more badges
 
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribution](#contribution)
+- [Tests](#tests)
+- [License](#license)
+- [Contact](#contact)
+
 ## Description:
  ${data.description}
 
@@ -29,10 +38,13 @@ ${data.usage}
 ## Contribution:
 ${data.contribution}
 
+## Tests:
+${data.tests}
+
 ## License:
 ${data.license}
 
-# Contact:
+# Questions? Contact:
 ## Email:
 ${data.email}
 ## GitHub User:

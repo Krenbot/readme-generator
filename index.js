@@ -31,6 +31,11 @@ const questions = [
         name: 'contribution'
     },
     {
+        type: 'input',
+        message: 'How can we test your project?',
+        name: 'test'
+    },
+    {
         type: 'list',
         message: 'Select a license:',
         choices: ['Apache', 'MIT', 'GPL', 'OSL'],
