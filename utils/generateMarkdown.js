@@ -17,7 +17,6 @@ function generateMarkdown(data) {
 ![badge](https://img.shields.io/github/last-commit/${data.ghuser}/${data.ghrepo})
 TODO: Add more badges
 
-
 ## Description:
  ${data.description}
 
@@ -37,14 +36,7 @@ ${data.license}
 ## Email:
 ${data.email}
 ## GitHub User:
-${data.ghuser}
-
-
-
-
-
-
-`;
+${data.ghuser}`;
 }
 
 module.exports = generateMarkdown;
