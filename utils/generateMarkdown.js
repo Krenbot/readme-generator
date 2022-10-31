@@ -8,7 +8,13 @@ function renderLicenseLink(license) { }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) { }
+function renderLicenseSection(license) {
+  return `## License:
+  ${license}`
+  //Call functions in correct order in this function to create section
+  //create badge, wrap google result in hyperlink href for badge
+
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -41,13 +47,12 @@ ${data.contribution}
 ## Tests:
 ${data.tests}
 
-## License:
-${data.license}
+${renderLicenseSection(data.license)}
 
-# Questions? Contact:
-## Email:
+## Contact:
+### Email:
 ${data.email}
-## GitHub User:
+### GitHub User:
 ${data.ghuser}`;
 }
 
