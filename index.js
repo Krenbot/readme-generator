@@ -56,9 +56,8 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFileSync(
-        `./dist/${fileName}`, data
-    )
- }
+        `./dist/${fileName}`, data)
+}
 
 // TODO: Create a function to initialize app
 function init() {
@@ -66,9 +65,7 @@ function init() {
         .then((response) => {
             console.log(response)
             writeToFile('readme.md', generateMarkdown(response))
-        }
-
-        )
+        })
 }
 
 // Function call to initialize app
