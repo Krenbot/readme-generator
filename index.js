@@ -48,7 +48,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What is your GitHub repo linK?',
+        message: 'What is your GitHub repo link? (terminal slug only)',
         name: 'ghrepo'
     },
 ];
@@ -59,9 +59,6 @@ function writeToFile(fileName, data) {
         `./dist/${fileName}`, data
     )
  }
-
-
-
 
 // TODO: Create a function to initialize app
 function init() {
