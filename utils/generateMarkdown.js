@@ -2,11 +2,11 @@
 // If there is no license, return an empty string
 //'Apache', 'MIT', 'GPL'
 function renderLicenseBadge(license) {
-  if (data.license === 'Apache') {
+  if (license === 'Apache') {
     return '![License](https://img.shields.io/badge/license-Apache-blue)'
-  } else if (data.license === 'MIT') {
+  } else if (license === 'MIT') {
     return '![License](https://img.shields.io/badge/license-MIT-informational)'
-  } else if (data.license === 'GPL') {
+  } else if (license === 'GPL') {
     return '![License](https://img.shields.io/badge/license-GPL-blue)'
   } else {
     return ''
@@ -31,7 +31,7 @@ function renderLicenseLink(license) {
 //Returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (license === 'None') {
+  if (data.license === 'None') {
     return ''
   } else {
     return `##License: ${data.license}: ${renderLicenseLink(data.license)}`
@@ -69,12 +69,12 @@ ${data.contribution}
 ## Tests:
 ${data.tests}
 
-${renderLicenseSection(data.license)}
-${renderLicenseBadge(data.license)}
+## License:
+
 
 # Questions? Contact:
 ## GitHub User:
-${data.ghuser}
+[${data.ghuser}](https://github.com/${data.ghuser})
 ## Email:
 ${data.email}
 `;
@@ -84,3 +84,6 @@ module.exports = generateMarkdown;
 
 // ## License:
 // ${data.license}
+
+// ${renderLicenseSection(license)}
+// ${renderLicenseBadge(license)}
