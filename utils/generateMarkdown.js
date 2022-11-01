@@ -18,11 +18,11 @@ function renderLicenseBadge(license) {
 //'Apache', 'MIT', 'GPL'
 function renderLicenseLink(license) {
   if (license === 'Apache') {
-    return 'https://www.apache.org/licenses/LICENSE-2.0'
+    return 'https://opensource.org/licenses/Apache-2.0/'
   } else if (license === 'MIT') {
-    return 'https://opensource.org/licenses/MIT'
+    return 'https://opensource.org/licenses/MIT/'
   } else if (license === 'GPL') {
-    return 'https://www.gnu.org/licenses/gpl-3.0.en.html'
+    return 'https://www.gnu.org/licenses/gpl-3.0.en.html/'
   } else {
     return ''
   }
@@ -42,8 +42,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-![badge](https://img.shields.io/github/last-commit/${data.ghuser}/${data.ghrepo})
-TODO: Add more badges
+${renderLicenseBadge(data.license)}
 
 ## Table of Contents
 - [Description](#description)
@@ -70,10 +69,10 @@ ${data.contribution}
 ${data.tests}
 
 ## License:
-
+[${data.license}](${renderLicenseLink(data.license)})
 
 # Questions? Contact:
-## GitHub User:
+## GitHub:
 [${data.ghuser}](https://github.com/${data.ghuser})
 ## Email:
 ${data.email}
@@ -87,3 +86,5 @@ module.exports = generateMarkdown;
 
 // ${renderLicenseSection(license)}
 // ${renderLicenseBadge(license)}
+
+// ![badge](https://img.shields.io/github/last-commit/${data.ghuser}/${data.ghrepo})
