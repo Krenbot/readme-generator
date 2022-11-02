@@ -80,11 +80,3 @@ ${data.email}
 }
 
 module.exports = generateMarkdown;
-
-// ## License:
-// ${data.license}
-
-// ${renderLicenseSection(license)}
-// ${renderLicenseBadge(license)}
-
-// ![badge](https://img.shields.io/github/last-commit/${data.ghuser}/${data.ghrepo})
