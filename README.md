@@ -38,7 +38,7 @@ COMING SOON
 ## License:
 [MIT](https://opensource.org/licenses/MIT/)
 
-# Questions? Contact:
+# Contact:
 ## GitHub:
 [Krenbot](https://github.com/Krenbot)
 ## Email:
